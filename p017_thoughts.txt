@@ -1,0 +1,20 @@
+A := [1-9]: 36
+onetwothreefourfivesixseveneightnine
+
+B := [20_0-90_0]: 47
+twentythirtyfourtyfiftysixtyseventyeightyninety
+
+C := [10-19]: 65
+teneleventhirteenfourteenfifteensixteenseventeeneightteennineteen
+
+D := [hundred]: 7
+
+E := [hundred and]: 10
+
+F := [one thousand]: 11
+
+[1-99] = A + C + 10*B + 8*A = 9*36 + 470 + 65 = 859 := H
+
+53
+
+[1-1000] = 10*H + 9*99*E + 9*D + 100*A + F = 8590 + 90*99 + 9*7 + 3600 + 11
