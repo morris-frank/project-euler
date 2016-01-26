@@ -6,21 +6,18 @@
 #include <math.h>
 using namespace std;
 
-	vector<long> numbers;
+vector<long> numbers;
 
-	void push(){
-		if(numbers.empty())
-			numbers.push_back(1);
-		else
-			numbers.push_back( (numbers.size() + 1) * (3 * (numbers.size()+1) - 1) /2 );
-	}
+void push(){
+	if(numbers.empty())
+		numbers.push_back(1);
+	else
+		numbers.push_back( (numbers.size() + 1) * (3 * (numbers.size()+1) - 1) /2 );
+}
 
-	bool isPentagon(int test){
-		if (find(numbers.begin(),numbers.end(),test) != numbers.end()){
-			return true;
-		}
-		return false;
-	}
+bool isPentagon(int test){
+	return find(numbers.begin(),numbers.end(),test) != numbers.end());
+}
 
 
 int main(){
